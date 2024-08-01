@@ -1,5 +1,5 @@
 # vunet-docs
-VuNet's Documentation Repository for Docusaurus.
+VuNet's Documentation Repository for Docusaurus
 
 To create a Docusaurus project with version control, smooth scroll, version dropdown, Algolia search, and sitemap generation using GitHub Desktop, follow these steps:
 
