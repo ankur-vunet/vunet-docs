@@ -47,6 +47,7 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           */
+          //includeCurrentVersion: false, // Exclude 'Current' version from the dropdown
         },
         
         blog: {
@@ -83,7 +84,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/ankur-vunet/vunet-docs',
             label: 'GitHub',
             position: 'right',
           },
