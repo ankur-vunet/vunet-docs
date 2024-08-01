@@ -33,6 +33,7 @@ To create a Docusaurus project with version control, smooth scroll, version drop
 3. **Push Initial Setup to GitHub:**
    - Open GitHub Desktop and commit the changes.
    - Push the initial setup to the GitHub repository.
+   - Alternatively, you can do it with vs-code also, directly.
 
 ### Step 2: Add Version Control and Smooth Scroll
 1. **Add Smooth Scroll:**
