@@ -39,14 +39,55 @@ To create a Docusaurus project with version control, smooth scroll, version drop
 1. **Update basic configs**
    - In `docusaurus.config.js`, update title, tagline, favicon, url, base url, org name, projject name etc.
 
-2. **Add Smooth Scroll:**
-   - In `docusaurus.config.js`, add smooth scroll:
-     ```js
-     themeConfig: {
-       // other configurations
-       smoothScroll: true,
-     },
-     ```
+2. **Add Scroll to Hash:**
+    - Add following js file in `.\src\components\`
+      ```js
+      import React, { useEffect } from 'react';
+      import { useLocation } from 'react-router-dom';
+
+      const ScrollToHash = () => {
+        const { hash } = useLocation();
+
+        useEffect(() => {
+          if (hash) {
+            const id = hash.replace('#', '');
+
+            const scrollToElement = () => {
+              const element = document.getElementById(id);
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+              } else {
+                // If the element is not found, try again in a short while
+                setTimeout(scrollToElement, 100);
+              }
+            };
+
+            scrollToElement();
+          }
+        }, [hash]);
+
+        return null;
+      };
+
+      export default ScrollToHash;
+      ```
+    - And update ``.\sr\theme\Layout.js`` as following:
+      ```js
+      import React from 'react';
+      import Layout from '@theme-original/Layout';
+      import ScrollToHash from '../components/ScrollToHash';
+
+      function CustomLayout(props) {
+        return (
+          <>
+            <ScrollToHash />
+            <Layout {...props} />
+          </>
+        );
+      }
+
+      export default CustomLayout;
+      ```
 
 3. **Version Control:**
    - Add version control by creating `versions.json` and necessary config changes.
