@@ -12,9 +12,10 @@ To create a Docusaurus project with version control, smooth scroll, version drop
    - Open the terminal in your cloned repository directory.
    - Run the following commands:
      ```sh
-     npx create-docusaurus@latest my-website classic
-     cd my-website
+     npx create-docusaurus@latest vunet-docs classic
+     cd vunet-docs
      ```
+     Choose Javascript while creating docusaurus website.
 
 3. **Push Initial Setup to GitHub:**
    - Open GitHub Desktop and commit the changes.
