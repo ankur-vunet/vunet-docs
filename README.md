@@ -101,13 +101,20 @@ To create a Docusaurus project with version control, smooth scroll, version drop
       - 1.0 at http://localhost:3000/docs/ for the version 1.0 docs
       - current at http://localhost:3000/docs/next/ for the upcoming, unreleased docs
     2. Add a Version Dropdown
-      To navigate seamlessly across versions, add a version dropdown.
-
-      Modify the docusaurus.config.js file:
-
-      ```docusaurus.config.js
-
-      ```
+      To navigate seamlessly across versions, add a version dropdown. Modify the docusaurus.config.js file:
+          ```js title="docusaurus.config.js"
+          themeConfig: {
+            navbar: {
+              items: [
+                {
+                  type: 'docsVersionDropdown',
+                  position: 'right',
+                },
+                // other items
+              ],
+            },
+          },
+          ```
 
 ### Step 3: Adding Algolia Search
 1. **Apply for Algolia DocSearch:**
@@ -130,24 +137,6 @@ To create a Docusaurus project with version control, smooth scroll, version drop
          searchParameters: {},
          searchPagePath: 'search',
          insights: false,
-       },
-     },
-     ```
-
-### Step 4: Adding Version Dropdown
-1. **Enable Versioning:**
-   - Run `npx docusaurus docs:version 1.0.0` to create the first version.
-   - Add the versioning configuration in `docusaurus.config.js`:
-     ```js title="docusaurus.config.js"
-     themeConfig: {
-       navbar: {
-         items: [
-           {
-             type: 'docsVersionDropdown',
-             position: 'right',
-           },
-           // other items
-         ],
        },
      },
      ```
