@@ -36,7 +36,10 @@ To create a Docusaurus project with version control, smooth scroll, version drop
    - Alternatively, you can do it with vs-code also, directly.
 
 ### Step 2: Add Version Control and Smooth Scroll
-1. **Add Smooth Scroll:**
+1. **Update basic configs**
+   - In `docusaurus.config.js`, update title, tagline, favicon, url, base url, org name, projject name etc.
+
+2. **Add Smooth Scroll:**
    - In `docusaurus.config.js`, add smooth scroll:
      ```js
      themeConfig: {
@@ -45,7 +48,7 @@ To create a Docusaurus project with version control, smooth scroll, version drop
      },
      ```
 
-2. **Version Control:**
+3. **Version Control:**
    - Add version control by creating `versions.json` and necessary config changes.
    - Create a `versions` folder and add versioned docs.
 
