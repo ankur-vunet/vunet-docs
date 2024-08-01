@@ -17,6 +17,19 @@ To create a Docusaurus project with version control, smooth scroll, version drop
      ```
      Choose Javascript while creating docusaurus website.
 
+     Test the project by running following command, which will run this in localhost
+     ```sh
+     npm run start
+     ```
+
+     On first run, it may have error: 'docusaurus' is not recognized as an internal or external command, operable program or batch file. If you see this error, install dependencies with:
+
+     ```sh
+     npm install -g @docusaurus/core @docusaurus/preset-classic
+     ```
+     After this, you can re-run the ``npm run start`` and can see the website in action on localhost.
+
+
 3. **Push Initial Setup to GitHub:**
    - Open GitHub Desktop and commit the changes.
    - Push the initial setup to the GitHub repository.
