@@ -2,12 +2,9 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro - Ver 3.0
+# Tutorial Intro - Ver 2.0
 
 Let's discover **Docusaurus in less than 5 minutes**.
-
-## Sample Heading
-This is a sample heading.
 
 ## Getting Started
 
