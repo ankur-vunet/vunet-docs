@@ -22,6 +22,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'ankur-vunet', // Usually your GitHub org/user name.
   projectName: 'vunet-docs', // Usually your repo name.
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -143,6 +144,16 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      plugins: [
+        [
+          '@docusaurus/plugin-sitemap',
+          {
+            changefreq: 'weekly',
+            priority: 0.5,
+            trailingSlash: false,
+          },
+        ],
+      ],
     }),
 };
 
