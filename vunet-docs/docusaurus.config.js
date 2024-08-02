@@ -155,6 +155,9 @@ const config = {
         ],
       ],
     }),
+    future: {
+      experimental_router: 'hash',
+    },
 };
 
 export default config;

@@ -136,7 +136,28 @@ To create a Docusaurus project with version control, smooth scroll, version drop
      ],
      ```
 
-### Step 4: Adding Algolia Search
+### Step 4: Configuring Hash Router
+1. **Enable Hash Router:**
+   - In `docusaurus.config.js`, add the following configuration:
+     ```js
+     future: {
+       experimental_router: 'hash',
+     },
+     ```
+
+### Step 5: Building and Deploying the Site
+1. **Build the Site:**
+   - Run `npm run build` to build the site.
+
+2. **Deploying on GitHub Pages:**
+   - run following deploy command:
+      ```
+      cmd /C 'set "GIT_USER=ankur-vunet" && npm run deploy'
+      ```
+      This will copy the build folder into gh-pages branch. And from same website can be accessed.
+   - Since Hash router does not allow sitemap to be generated. You may need to comment hash router in config and rebuild and generate sitemap.xml. And then manually copy this sitemap into gh-pages branch.
+
+### Step 6: Adding Algolia Search
 1. **Apply for Algolia DocSearch:**
    - Apply for DocSearch and get `appId`, `apiKey`, and `indexName`.
 
@@ -161,27 +182,7 @@ To create a Docusaurus project with version control, smooth scroll, version drop
      },
      ```
 
-### Step 5: Configuring Hash Router
-1. **Enable Hash Router:**
-   - In `docusaurus.config.js`, add the following configuration:
-     ```js
-     future: {
-       experimental_router: 'hash',
-     },
-     ```
 
-### Step 6: Building and Deploying the Site
-1. **Build the Site:**
-   - Run `npm run build` to build the site.
-
-2. **Deploying on GitHub Pages:**
-   - In `docusaurus.config.js`, set `url` and `baseUrl` correctly.
-   - Follow [Docusaurus GitHub Pages deployment guide](https://docusaurus.io/docs/deployment#deploying-to-github-pages).
-
-3. **Push Build Folder to GitHub Pages:**
-   - Switch to `gh-pages` branch using GitHub Desktop.
-   - Copy the contents of the `build` folder to the root of the `gh-pages` branch.
-   - Commit and push the changes to GitHub.
 
 ### Example `docusaurus.config.js`
 Here is an example `docusaurus.config.js` with all configurations:
