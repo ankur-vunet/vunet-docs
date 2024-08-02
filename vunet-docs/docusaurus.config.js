@@ -85,6 +85,10 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
+            type: 'search',
+            position: 'right',
+          },
+          {
             type: 'docsVersionDropdown',
             position: 'right',
           },
@@ -144,20 +148,25 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-      plugins: [
-        [
-          '@docusaurus/plugin-sitemap',
-          {
-            changefreq: 'weekly',
-            priority: 0.5,
-            trailingSlash: false,
-          },
-        ],
-      ],
+      algolia: {
+        appId: '33MDRL0XOX',
+        apiKey: '6cde8d80bb5dbbcba000f036195ae56c',
+        indexName: 'vudocs_algolia',
+        contextualSearch: true,
+        externalUrlRegex: 'external\\.com|domain\\.com',
+        replaceSearchResultPathname: {
+          from: '/docs/', // or as RegExp: /\/docs\//
+          to: '/docs/',
+        },
+        searchParameters: {},
+        searchPagePath: 'search',
+        insights: false,
+      },
     }),
-    future: {
-      experimental_router: 'hash',
-    },
+
+  future: {
+    experimental_router: 'hash', // Use the hash router
+  },
 };
 
 export default config;
