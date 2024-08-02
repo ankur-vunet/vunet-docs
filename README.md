@@ -116,7 +116,27 @@ To create a Docusaurus project with version control, smooth scroll, version drop
           },
           ```
 
-### Step 3: Adding Algolia Search
+### Step 3: Generating Sitemap
+1. **Add Sitemap Plugin:**
+   - Install the sitemap plugin:
+     ```sh
+     npm install @docusaurus/plugin-sitemap
+     ```
+   - Add the plugin in `docusaurus.config.js`:
+     ```js
+     plugins: [
+       [
+         '@docusaurus/plugin-sitemap',
+         {
+           changefreq: 'weekly',
+           priority: 0.5,
+           trailingSlash: false,
+         },
+       ],
+     ],
+     ```
+
+### Step 4: Adding Algolia Search
 1. **Apply for Algolia DocSearch:**
    - Apply for DocSearch and get `appId`, `apiKey`, and `indexName`.
 
@@ -141,27 +161,7 @@ To create a Docusaurus project with version control, smooth scroll, version drop
      },
      ```
 
-### Step 5: Generating Sitemap
-1. **Add Sitemap Plugin:**
-   - Install the sitemap plugin:
-     ```sh
-     npm install @docusaurus/plugin-sitemap
-     ```
-   - Add the plugin in `docusaurus.config.js`:
-     ```js
-     plugins: [
-       [
-         '@docusaurus/plugin-sitemap',
-         {
-           changefreq: 'weekly',
-           priority: 0.5,
-           trailingSlash: false,
-         },
-       ],
-     ],
-     ```
-
-### Step 6: Configuring Hash Router
+### Step 5: Configuring Hash Router
 1. **Enable Hash Router:**
    - In `docusaurus.config.js`, add the following configuration:
      ```js
@@ -170,7 +170,7 @@ To create a Docusaurus project with version control, smooth scroll, version drop
      },
      ```
 
-### Step 7: Building and Deploying the Site
+### Step 6: Building and Deploying the Site
 1. **Build the Site:**
    - Run `npm run build` to build the site.
 
