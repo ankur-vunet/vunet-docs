@@ -85,16 +85,21 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            type: 'search',
-            position: 'right',
-          },
-          {
             type: 'docsVersionDropdown',
             position: 'right',
           },
           {
             href: 'https://github.com/ankur-vunet/vunet-docs',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            href: 'https://vunetsystems.com/',
+            label: 'vunetsystems.com',
+            position: 'right',
+          },
+          {
+            type: 'search',
             position: 'right',
           },
         ],
