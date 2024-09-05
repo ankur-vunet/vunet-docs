@@ -7,7 +7,7 @@ sidebar_position: 1
 Let's discover **Docusaurus in less than 5 minutes**.
 
 ## Sample Heading
-This is a sample heading.
+This is a sample heading. 
 
 ## Getting Started
 
