@@ -48,7 +48,7 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           */
-          includeCurrentVersion: false, // Exclude 'Current' version from the dropdown
+          includeCurrentVersion: true, // Exclude 'Current' version from the dropdown
         },
         
         blog: {
