@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -65,6 +65,22 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true, // Enables cache busting by hashing the index filename
+        indexDocs: true, // Indexes documentation pages
+        indexPages: true, // Indexes non-doc pages like home or custom pages
+        docsRouteBasePath: '/', // Adjust this if your docs are not at the root
+        highlightSearchTermsOnTargetPage: true,
+        language: ['en'], // Set language to support multiple languages if needed
+        searchResultLimits: 10, // Number of results to show in the search suggestions
+        searchResultContextMaxLength: 50, // Maximum length of the excerpt
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -74,16 +90,17 @@ const config = {
         title: 'VuNet-Docs',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          //src: 'img/logo.svg',
+          src: 'img/Vunet Logo Blue - Copy.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'User Guide',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Release Notes', position: 'left' },
           {
             type: 'docsVersionDropdown',
             position: 'right',
@@ -111,8 +128,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'User Guide',
                 to: '/docs/intro',
+              },
+              {
+                label: 'Release Notes',
+                to: '/blog',
               },
             ],
           },
@@ -120,16 +141,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/vunet-systems/',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://x.com/vunetsystems',
               },
             ],
           },
@@ -137,22 +154,23 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                href: 'https://github.com/ankur-vunet/vunet-docs',
+                label: 'GitHub',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://vunetsystems.com/',
+                label: 'vunetsystems.com',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} VuNet. All Rights Reserved.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      /*
       algolia: {
         appId: '33MDRL0XOX',
         apiKey: '6cde8d80bb5dbbcba000f036195ae56c',
@@ -167,11 +185,12 @@ const config = {
         searchPagePath: 'search',
         insights: false,
       },
+      */
     }),
-
+/*
   future: {
     experimental_router: 'hash', // Use the hash router
-  },
+  },*/
 };
 
 export default config;
