@@ -48,6 +48,11 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           */
+          versions: {
+            current: {
+              label: 'WIP 🚧', // This will replace 'Next' with 'Canary'
+            },
+          },
           includeCurrentVersion: true, // Exclude 'Current' version from the dropdown
         },
         
