@@ -19,3 +19,14 @@ sidebar_position: 3
 :::note
 Set Title what you want to see on left side index.
 :::
+
+## Adding Sub chapter card list:
+To add below kind of structure add following in the md file:
+```
+import DocCardList from '@theme/DocCardList';
+<DocCardList />
+```
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />
