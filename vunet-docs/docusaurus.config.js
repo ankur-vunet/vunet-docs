@@ -61,6 +61,8 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          onInlineAuthors: 'ignore',
+          onUntruncatedBlogPosts: 'ignore',
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -91,7 +93,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/vunet-social-card.png',
       docs: {
         sidebar: {
           hideable: true,
@@ -175,7 +177,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} VuNet. All Rights Reserved.`,
+        copyright: `© VuNet ${new Date().getFullYear()}. All Rights Reserved.`,
       },
       prism: {
         theme: prismThemes.github,
