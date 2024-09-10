@@ -655,3 +655,27 @@ export default config;
 - Use GitHub Desktop for committing and pushing changes.
 - For creating versioned docs, refer to [Docusaurus versioning documentation](https://docusaurus.io/docs/versioning).
 - Ensure Algolia DocSearch credentials (`appId`, `apiKey`, `indexName`) are correctly added to the `docusaurus.config.js` file.
+
+
+## Docker Image
+- Add dockerfile at the root of the project.
+    ```
+    # Use the official NGINX image from Docker Hub
+    FROM nginx:alpine
+
+    # Copy the built files from the local 'build' directory to the default NGINX HTML directory
+    COPY ./build /usr/share/nginx/html
+
+    # Expose port 80 to allow access to the NGINX server
+    EXPOSE 80
+
+    # Start NGINX
+    CMD ["nginx", "-g", "daemon off;"]
+    ```
+- Run Docker Desktop.
+- Run following commands in terminal.
+    ```
+    docker build -t docusaurus-doc .
+    docker run -d -p 8080:80 docusaurus-doc
+    ```
+- Now you can access it using `localhost:8080`
