@@ -135,7 +135,7 @@ Some random FAQs added below for sample.
 
 - 🔴 Self-hosting requires experience in networking as well as Linux and web server administration. It's the most difficult option, and would require the most time to manage successfully. Expense-wise, cloud services are almost never free, and purchasing/deploying an onsite server can be even more costly.
 - 🟢 Jamstack providers can help you set up a working website in almost no time and offer features like server-side redirects that are easily configurable. Many providers offer generous build-time quotas even for free plans that you would almost never exceed. However, free plans have limits, and you would need to pay once you hit those limits. Check the pricing page of your provider for details.
-- 🟡 The GitHub Pages deployment workflow can be tedious to set up. (Evidence: see the length of [Deploying to GitHub Pages](#deploying-to-github-pages)!) However, this service (including build and deployment) is always free for public repositories, and we have detailed instructions to help you make it work.
+- 🟡 The GitHub Pages deployment workflow can be tedious to set up. (Evidence: see the length of Deploying to GitHub Pages) However, this service (including build and deployment) is always free for public repositories, and we have detailed instructions to help you make it work.
 
 </details>
 

@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Deploy Platform',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/deploy.svg').default,
     description: (
       <>
         Install vuSmartMaps™ on a Virtual Machine-based environment of your choice.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Ingest Data',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/ingest_data.svg').default,
     description: (
       <>
         Ingest your data into vuSmartMaps™ from a wide array of data sources.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Gain Insights',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/gain_insights.svg').default,
     description: (
       <>
         Analyse and understand all your complex information through Dashboards, Alerts, etc.
