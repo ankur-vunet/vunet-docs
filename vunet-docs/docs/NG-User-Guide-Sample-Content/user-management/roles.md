@@ -25,7 +25,7 @@ This will open a new page where you can enter a Role Name and select a list of u
 
 Also, the user role-specific homepage can be set here under **Select HomePage**. A specific dashboard can be set as the default landing page for this particular user role for the web app as well as for the mobile app.
 
-Additionally, you can set the Data Access Policy to provide granular data access controls for user roles. The details on the Data Access Policy are discussed [here](#heading=h.in9jws4xexko) in detail.
+Additionally, you can set the Data Access Policy to provide granular data access controls for user roles. The details on the Data Access Policy are discussed [here](./user-specific-views.md) in detail.
 
 ![Enter image alt description](Images/vNU_Image_12.jpeg)
 
