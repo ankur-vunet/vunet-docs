@@ -87,6 +87,17 @@ const config = {
         searchResultContextMaxLength: 50, // Maximum length of the excerpt
       },
     ],
+    /*
+    [
+      'docusaurus-pushfeedback',{
+          project: '<YOUR_PROJECT_ID>',
+          buttonPosition: 'center-right',
+          modalPosition: 'sidebar-right',
+          buttonStyle: 'dark',
+          modalTitle: 'Share your thoughts',
+      }
+    ],
+    */
   ],
 
   themeConfig:
