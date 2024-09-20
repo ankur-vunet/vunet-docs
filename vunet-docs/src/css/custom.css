@@ -49,6 +49,17 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.markdown a {
-  font-weight: bold;
+.markdown a:not(.hash-link) {
+  color: inherit; /* Use the regular text color */
+  text-decoration: underline; /* Underline the links */
+  font-weight: normal; /* Normal weight */
+}
+
+.markdown a:not(.hash-link):hover {
+  color: var(--ifm-color-primary-lightest); /* Change the color to blue on hover */
+  font-weight: normal;
+}
+
+.hash-link {
+  font-weight: normal; /* Set the hash link font weight to normal */
 }
