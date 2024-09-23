@@ -679,3 +679,43 @@ export default config;
     docker run -d -p 8080:80 docusaurus-doc
     ```
 - Now you can access it using `localhost:8080`
+
+## Adding Videos in md files
+
+### YouTube Videos
+add the youtube videos with following syntax:
+```
+<div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+  <iframe
+    src="https://www.youtube.com/embed/YNaV5-Wrau8"
+    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>
+```
+
+:::tip
+To make youtube video autoplay, in case explicitly required. Update the link as `https://www.youtube.com/embed/YNaV5-Wrau8?autoplay=1&muted=1`
+:::
+
+### Offline Videos
+Add MP4 format videos, stored on staic/videos folder, with following syntax:
+```
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<video controls width="100%" poster={useBaseUrl('/videos/UserMgmt.png')}>
+  <source src={useBaseUrl('/videos/UserMgmt.mp4')} type="video/mp4" />
+</video>
+```
+
+:::tip
+To make offline videos autoplay, in case explicitly required. Update the video tag as as `<video controls autoPlay muted loop width="100%" poster={useBaseUrl('/img/video-poster.png')}>`
+:::
+
+### Adding GIFs
+Adding GIF is same as image. Just replace the png file with gif file.
+```
+![GIF description](path_to_your_gif.gif)
+```
