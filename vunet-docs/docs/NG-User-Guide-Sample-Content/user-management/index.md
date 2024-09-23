@@ -7,7 +7,7 @@ sidebar_position: 3
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<video controls width="100%" poster={useBaseUrl('/videos/UserMgmt.png')}>
+<video controls width="100%" poster={useBaseUrl('/videos/RBAC-Diagram.png')}>
   <source src={useBaseUrl('/videos/O11ySourcesIntro.mp4')} type="video/mp4" />
 </video>
 
