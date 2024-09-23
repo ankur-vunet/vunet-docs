@@ -11,6 +11,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   <source src={useBaseUrl('/videos/O11ySourcesIntro.mp4')} type="video/mp4" />
 </video>
 
+:::warning
+The above video is not associated with User Management. This is added only for sample.
+:::
+
 ## Introduction
 
 User Management in vuSmartMaps is your key to managing user access securely and efficiently. This section provides you with the tools to control who can access what within the vuSmartMaps platform, ensuring a smooth and secure experience.
