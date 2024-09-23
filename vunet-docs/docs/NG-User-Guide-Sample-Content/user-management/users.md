@@ -4,6 +4,16 @@ sidebar_position: 1
 
 # Users
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+<video controls width="100%" poster={useBaseUrl('/videos/RBAC-Diagram.png')}>
+  <source src={useBaseUrl('/videos/O11ySourcesIntro.mp4')} type="video/mp4" />
+</video>
+
+:::warning
+The above video is not associated with User Management. This is added only for sample.
+:::
+
 In the User Management module, you can perform several actions such as creating, editing, and deleting users. Additionally, you can configure which roles a particular user can be assigned. To access this module, click on the 'Users' tab, where you'll see a list of all users along with icons for creating a new user and deleting existing ones.
 
 The user listing page displays information about each user, and users with the write permissions can edit user information and modify credentials by clicking on the appropriate user. The user listing page is shown below:

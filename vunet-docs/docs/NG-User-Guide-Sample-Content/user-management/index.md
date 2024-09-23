@@ -5,15 +5,15 @@ sidebar_position: 3
 
 # User Management
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
-<video controls width="100%" poster={useBaseUrl('/videos/RBAC-Diagram.png')}>
-  <source src={useBaseUrl('/videos/O11ySourcesIntro.mp4')} type="video/mp4" />
-</video>
-
-:::warning
-The above video is not associated with User Management. This is added only for sample.
-:::
+<div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+  <iframe
+    src="https://www.youtube.com/embed/YNaV5-Wrau8"
+    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>
 
 ## Introduction
 
