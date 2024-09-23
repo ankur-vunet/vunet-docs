@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvunet_docs=self.webpackChunkvunet_docs||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/vunet-docs/blog","blogTitle":"Blog","authorsListPath":"/vunet-docs/blog/authors"}')}}]);
