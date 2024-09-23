@@ -8,12 +8,16 @@ sidebar_position: 3
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <video controls width="100%" poster={useBaseUrl('/videos/UserMgmt.png')}>
-  <source src={useBaseUrl('/videos/UserMgmt.mp4')} type="video/mp4" />
+  <source src={useBaseUrl('/videos/O11ySourcesIntro.mp4')} type="video/mp4" />
 </video>
 
 ## Introduction
 
 User Management in vuSmartMaps is your key to managing user access securely and efficiently. This section provides you with the tools to control who can access what within the vuSmartMaps platform, ensuring a smooth and secure experience.
+
+<video controls width="100%" poster={useBaseUrl('/videos/UserMgmt.png')}>
+  <source src={useBaseUrl('/videos/UsrMgmt.mp4')} type="video/mp4" />
+</video>
 
 In vuSmartMaps, each user is assigned specific permissions based on their role. These permissions determine what they can do and see in the platform, aligning access with organizational needs.
 
