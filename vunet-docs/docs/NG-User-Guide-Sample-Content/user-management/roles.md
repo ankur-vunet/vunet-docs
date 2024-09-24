@@ -17,11 +17,7 @@ On the Roles listing page, users with appropriate permissions can create, edit, 
 
 ## Role Creation
 
-import VideoPlayer from '@site/src/components/VideoPlayer';
-
-<VideoPlayer videoSrc="/videos/ImportingO11ySources.mp4" posterSrc="/videos/RBAC-Diagram.png" />
-
-<br />
+![Enter image alt description](./Images/ImportingO11ySources.gif)
 
 To create a new Role, click on the **+** button on the Roles listing page. 
 
