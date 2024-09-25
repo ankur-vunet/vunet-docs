@@ -117,6 +117,7 @@ const config = {
           alt: 'My Site Logo',
           //src: 'img/logo.svg',
           src: 'img/Vunet Logo Blue - Copy.png',
+          srcDark: 'img/Vunet Logo White Big - Copy.png', // Logo for dark theme
         },
         items: [
           {
