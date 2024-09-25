@@ -8,6 +8,8 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(90deg, #A42783 6%, #E22432 50%, #F59620 100%);
+  color: white; /* Adjust the text color for readability */
 }
 
 @media screen and (max-width: 996px) {
