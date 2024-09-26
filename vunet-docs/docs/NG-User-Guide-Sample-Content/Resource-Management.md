@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Resource Management
 :::info
-This chapter is compiled by downloading markdown directly from google docs.
+This chapter is compiled by downloading markdown directly from google docs
 - md file will be downloaded with images as base 64 encryption.
    - The resolution of images seems poor.
 - TOC can be deleted.
