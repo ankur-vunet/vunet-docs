@@ -217,6 +217,11 @@ const config = {
   future: {
     experimental_router: 'hash', // Use the hash router
   },*/
+
+  customFields: {
+    enableVEDButton: true,  // Set to true to show, false to hide
+  },
+  
 };
 
 export default config;
