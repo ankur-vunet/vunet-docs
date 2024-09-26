@@ -63,3 +63,7 @@
 .hash-link {
   font-weight: normal; /* Set the hash link font weight to normal */
 }
+
+.theme-back-to-top-button {
+  left: 80%; /* Center horizontally */
+}

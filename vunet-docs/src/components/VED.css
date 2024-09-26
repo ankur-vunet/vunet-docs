@@ -1,0 +1,12 @@
+.ved-floating-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10001;
+}
+
+.ved-floating-icon img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
