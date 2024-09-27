@@ -69,6 +69,10 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        gtag: {
+          trackingID: 'G-YDF34QEMB8',
+          anonymizeIP: true,
+        },
       }),
     ],
   ],
@@ -219,9 +223,8 @@ const config = {
   },*/
 
   customFields: {
-    enableVEDButton: true,  // Set to true to show, false to hide
+    enableVEDButton: false,  // Set to true to show, false to hide
   },
-  
 };
 
 export default config;
