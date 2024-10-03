@@ -116,12 +116,14 @@ const config = {
         },
       },
       navbar: {
-        title: 'VuNet-Docs',
+        //title: 'VuNet-Docs',
         logo: {
           alt: 'My Site Logo',
           //src: 'img/logo.svg',
-          src: 'img/Vunet Logo Blue - Copy.png',
-          srcDark: 'img/Vunet Logo White Big - Copy.png', // Logo for dark theme
+          //src: 'img/Vunet Logo Blue - Copy.png',
+          src: 'img/vunet docs - logo-03.png',
+          //srcDark: 'img/Vunet Logo White Big - Copy.png', // Logo for dark theme
+          srcDark: 'img/vunet docs - logo-03 White.png', // Logo for dark theme
         },
         items: [
           {
