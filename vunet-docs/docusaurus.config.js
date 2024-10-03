@@ -135,11 +135,13 @@ const config = {
             type: 'docsVersionDropdown',
             position: 'right',
           },
+          /*
           {
             href: 'https://github.com/ankur-vunet/vunet-docs',
             label: 'GitHub',
             position: 'right',
           },
+          */
           {
             href: 'https://vunetsystems.com/',
             label: 'vunetsystems.com',
