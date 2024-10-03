@@ -79,7 +79,7 @@
 }
 
 .markdown a:not(.hash-link):hover {
-  color: var(--ifm-color-primary-lightest); /* Change the color to blue on hover */
+  color: var(--ifm-color-primary); /* Change the color to blue on hover */
   font-weight: normal;
 }
 
