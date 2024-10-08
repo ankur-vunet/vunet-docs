@@ -1,0 +1,35 @@
+#ved-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100001;
+  background: none;
+  border: none;
+}
+
+#iframe-container {
+  display: block;
+  position: fixed;
+  top: 8%;
+  right: 0;
+  width: 50%;
+  height: 89%;
+  z-index: 100002;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#iframe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #F4F5F5;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
